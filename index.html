@@ -8,8 +8,88 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <p>Here is some dummy text</p>
-    
+<!--Content is the mast div that holds everything-->
+    <div class="content">
+        <!--Pushed to the left-->
+        <div class="image-section">
+          <div class="banner">
+            <img src="images/odin-lined.png" alt="Odin image" />
+            ODIN
+          </div>
+          <p class="attribution">
+            Photo by
+            <a href="https://unsplash.com/@alex_andrews">Alexander Andrews</a>
+            At
+            <a href="https://unsplash.com/photos/rt6QV85-AIE">Unsplash</a>
+          </p>
+        </div>
+
+        <!--This Will be pushed to the right-->
+        <div class="text-section">
+          <p>
+            This is not a real online service! This is simply a vanilla HTML and CSS project. 
+            <em>Sign up</em> to get started.
+          </p>
+          <p>You <em><strong>REALLY</strong></em> you want to.</p>
+          
+          <!--Form Section-->
+          <form>
+            <div class="inputs-section">
+              <h3>Let's do this!</h3>
+              <div class="inputs">
+                <div>
+                  <div>
+                    <label for="first-name">FIRST NAME</label
+                    ><input type="text" id="first-name" name="first-name" />
+                  </div>
+                  <div>
+                    <label for="last-name">LAST NAME</label
+                    ><input
+                      type="text"
+                      class="focus"
+                      id="last-name"
+                      name="last-name"
+                    />
+                  </div>
+                </div>
+                <div>
+                  <div>
+                    <label for="email">EMAIL</label
+                    ><input type="email" id="email" name="email" />
+                  </div>
+                  <div>
+                    <label for="phone-number">PHONE NUMBER</label
+                    ><input type="tel" id="phone-number" name="phone-number" />
+                  </div>
+                </div>
+                <div>
+                  <div>
+                    <label for="password">PASSWORD</label
+                    ><input
+                      type="password"
+                      class="error"
+                      id="password"
+                      name="password"
+                    />
+                    <p class="error-message">*Passwords do not match</p>
+                  </div>
+                  <div>
+                    <label for="confirm-password">CONFIRM PASSWORD</label
+                    ><input
+                      type="password"
+                      class="error"
+                      id="confirm-password"
+                      name="confirm-password"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button type="submit" id="create-account">Create Account</button>
+          </form>
+          <p class="log-in">Already have an account? <a href="#">Log In</a></p>
+        </div>
+      </div>
 </body>
 <link>
 </html>
