@@ -1,4 +1,82 @@
-*{
-    background-color: yellow;
-    font-family: /*'Norse',*/ 'Times New Roman', Times, serif
+* {
+    color: ;
+    background: linear-gradient(90deg, blue, red);
 }
+
+/*opt*/
+:root {
+    --left-space: 48px;
+  }
+
+/*Hard Reset CSS*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+@font-face {
+    font-family: "Norse Bold";
+    src: url("./Norse-Bold.otf");
+  }
+
+/*Flexbox will flex everything to the right*/
+  .content {
+    min-height: 100vh;
+    display: flex;
+  }
+ 
+/*Everything applied to the left side*/
+  .image-section {
+    background-position: center center;
+    background-image: url("images/repair_splash.jpeg");
+    background-size: cover;
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    text-align: center;
+  } 
+/* Make links change color to show style*/
+  a {
+    color: white;
+  }
+  a:hover{
+      color:gold;
+  }
+
+/*Now Flexes the test relative to Odin Image*/
+  .banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5.5rem;
+    font-family: "Norse Bold";
+    margin-top: 20vh;
+    padding: 16px 0;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+/*Banner/Image were too large, shrinked it down */
+  .banner img {
+    height: 125px;
+  }
+  .banner h2{
+    margin: 0;
+  }
